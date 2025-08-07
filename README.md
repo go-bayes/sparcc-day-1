@@ -4,7 +4,7 @@ Welcome to the repository for Day 1 of the SPARCC Causal Inference Workshop
 
 ## 📅 Workshop Details
 
-**Date:** Tuesday, 12 August 2025  
+**Date:** Monday, 11 August 2025  
 **Time:** 09:00 – 17:00  
 **Venue:** Seventh College, 15th Floor Meeting Rooms, Tower West, Building 1  
 **Facilitator:** Benjamin Grant Purzycki, Aarhus University
@@ -15,8 +15,10 @@ This workshop introduces fundamental concepts and practical skills for causal in
 
 ## 🔗 Quick Links
 
-- [Benjamin's Code & Materials](https://gist.github.com/bgpurzycki/68015331beb74525a364c19ccc657fd3)
+- [Day 1 Lecture](https://www.dropbox.com/scl/fi/e9l943j1p8i63kaddzogj/Day1_purzycki.pdf?rlkey=eugt4p7gys3g947ezm7l9l3v0&dl=1)
+- [R code](https://gist.github.com/bgpurzycki/68015331beb74525a364c19ccc657fd3)
 - [Day 2 Workshop](https://go-bayes.github.io/sparcc-day-2/)
+
 
 ## 📚 Pre-Workshop Preparation
 
