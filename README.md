@@ -46,7 +46,7 @@ By the end of Day 1, participants will be able to:
 6. Understand basic estimation approaches
 
 
-### 📱 Scan to Access Workshop Materials
+### 🌈 Scan to Access Workshop Materials
 
 ![](images/sparcc_day_1_qr.png){width="500" fig-align="center"}
 
@@ -55,9 +55,4 @@ Scan this QR code to access the workshop website on your mobile device
 
 ## 📜 License
 
-This workshop material is licensed under CC BY 4.0. You are free to share and adapt the materials with attribution.
-
-
----
-
-🌈🌈 🌈 🌈  Thank you! 🌈 🌈 🌈 🌈 
+© 2025 Benjamin Grant Purzycki. This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).

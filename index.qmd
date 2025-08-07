@@ -150,7 +150,7 @@ The meeting rooms offer expansive views and modern facilities for our workshop.
 
 ## Next Steps
 
-Ready to dive deeper? Join us for [Day 2: Advanced Methods →](https://go-bayes.github.io/sparcc-day-2/) where we'll explore heterogeneous treatment effects and discover *who* benefits from religious participation!
+Join us for [Day 2: Advanced Methods →](https://go-bayes.github.io/sparcc-day-2/) where we'll investigate these topics in more detail, including estimating *who* benefits from religious participation.
 
 ## Quick Access
 
