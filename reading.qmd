@@ -1,0 +1,167 @@
+---
+title: "Pre-Workshop Reading"
+subtitle: "Essential Resources for Day 1"
+---
+
+::: {.welcome-banner}
+# 📚 Prepare for the Workshop
+Get the most out of Day 1 by reviewing these foundational materials
+:::
+
+## Required Reading
+
+The following readings are recommended in **descending order of importance** for the workshop:
+
+### 1. Thinking Clearly About Correlations and Causation
+
+::: {.card}
+**Rohrer, J. M. (2018)**. Thinking clearly about correlations and causation: Graphical causal models for observational data. *Advances in Methods and Practices in Psychological Science*, 1(1), 27-42.
+
+📖 [https://doi.org/10.1177/2515245917745629](https://doi.org/10.1177/2515245917745629)
+
+**Why this matters:** This paper provides an excellent introduction to causal diagrams (DAGs) and how they help us think about causation in observational data. Essential reading for understanding the core concepts we'll use throughout the workshop.
+:::
+
+### 2. Causality in the Study of Religion
+
+::: {.card}
+**Major-Smith, D. (2023)**. Exploring causality from observational data: An example assessing whether religiosity promotes cooperation. *Evolutionary Human Sciences*, 5, e22.
+
+📖 [https://doi.org/10.1017/ehs.2023.17](https://doi.org/10.1017/ehs.2023.17)
+
+**Why this matters:** A practical application of causal inference methods to a key question in the study of religion. This paper demonstrates the workflow we'll be learning.
+:::
+
+### 3. The Data Analyst's Guide (Chapters 1-4)
+
+::: {.card}
+**Bendixen, T, and Purzycki, B. G. (forthcoming)**. *The Data Analyst's Guide to Cause and Effect*. London: SAGE. 
+
+📚 **Chapters 1-4** (Day 1 will largely follow Chapters 1-2)
+
+**Why this matters:** Our primary textbook for the workshop. These chapters introduce the fundamental concepts and practical approaches we'll be using.
+
+*Note: Materials will be provided to workshop participants.*
+:::
+
+## Additional Resources
+
+### Interactive Tools
+
+::: {.callout-tip}
+### 🎮 DAGitty
+Practice drawing and analysing causal diagrams:  
+[http://www.dagitty.net/](http://www.dagitty.net/)
+
+We'll use this tool extensively during the workshop!
+:::
+
+### Video Resources
+
+::: {.callout-note}
+### 🎥 Recommended Videos
+
+1. **"Causal Inference Bootcamp"** by Brady Neal  
+   Excellent video series covering fundamentals  
+   [YouTube Playlist](https://www.youtube.com/playlist?list=PLoazKTcS0Rzb6bb9L508cyJ1z-U9iWkA0)
+
+2. **"The Book of Why"** by Judea Pearl  
+   Overview talk on causal reasoning  
+   [Watch on YouTube](https://www.youtube.com/watch?v=ZaPV1OSEpHw)
+:::
+
+## R Resources
+
+If you plan to follow along with the code examples, please ensure you have R and RStudio installed:
+
+### Installation Guide
+
+::: {.card}
+1. **Install R** (version 4.0 or higher)  
+   Download from: [https://cran.r-project.org/](https://cran.r-project.org/)
+
+2. **Install RStudio**  
+   Download from: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
+
+3. **Install Required Packages**  
+   Run this code in RStudio:
+   ```r
+   install.packages(c(
+     "tidyverse",
+     "dagitty",
+     "ggdag",
+     "broom",
+     "margot",
+     "kableExtra"
+   ))
+   ```
+:::
+
+## Workshop Code and Materials
+
+::: {.callout-important}
+### 💻 Access Workshop Code
+
+Benjamin's workshop materials and example code are available at:
+
+🔗 [GitHub Gist: Workshop Code](https://gist.github.com/bgpurzycki/68015331beb74525a364c19ccc657fd3)
+
+This gist will be updated with additional materials as the workshop approaches. Please check back closer to the workshop date for the latest version.
+:::
+
+## Conceptual Foundations
+
+### Key Concepts to Review
+
+Before the workshop, it will be helpful to be familiar with these statistical concepts:
+
+::: {.card}
+#### Basic Statistics
+- **Correlation** vs **Causation**
+- **Regression analysis** basics
+- **Confounding variables**
+- **Selection bias**
+
+#### Research Design
+- **Observational** vs **Experimental** data
+- **Counterfactual thinking**
+- **Treatment and control groups**
+:::
+
+## Questions to Consider
+
+As you read, consider these questions about your own research:
+
+::: {.rainbow-text style="font-size: 1.2rem;"}
+✨ What causal questions about religion and cooperation interest you?
+:::
+
+1. What is your **outcome** of interest?
+2. What is your **treatment** or exposure?
+3. What **confounders** might bias your analysis?
+4. What **data** would you need to answer your question?
+5. How would you **communicate** your findings?
+
+## Getting Help
+
+::: {.callout-note}
+### 📧 Contact
+
+If you have questions about the readings or preparation:
+
+**Benjamin Grant Purzycki**  
+Email: [bgpurzycki@cas.au.dk](mailto:bgpurzycki@cas.au.dk)
+
+**Workshop Coordinator**  
+Email: [workshop contact to be added]
+:::
+
+---
+
+::: {.welcome-banner}
+### Ready for Day 1? 
+
+Review these materials at your own pace. The workshop is designed to be accessible even if you haven't completed all the readings, but familiarity with the concepts will enhance your learning experience!
+
+**See you on 12 August 2025!** 🌈
+:::

@@ -1,0 +1,252 @@
+---
+title: "Workshop Resources"
+subtitle: "Code, Data, and Materials"
+---
+
+::: {.welcome-banner}
+# 🔗 Workshop Resources Hub
+All the materials you need for Day 1
+:::
+
+## Workshop Code
+
+::: {.card}
+### 💻 Benjamin's Workshop Materials
+
+Access the complete workshop code and examples:
+
+🔗 **[GitHub Gist: Workshop Code](https://gist.github.com/bgpurzycki/68015331beb74525a364c19ccc657fd3)**
+
+This gist contains:
+- Example R scripts for causal analysis
+- Simulation code for understanding causal inference
+- DAG construction examples
+- Data analysis workflows
+
+*Note: Benjamin will continue updating this resource. Check back for the latest version before the workshop.*
+:::
+
+## Workshop Data & Supplementary Materials
+
+::: {.card}
+### 📁 Dropbox Resources
+
+Additional workshop materials including:
+- PDF handouts and guides
+- Example datasets
+- R code templates
+- Supplementary readings
+
+🔗 **[Access Dropbox Folder](#)** *(Link to be provided to registered participants)*
+:::
+
+## Software & Tools
+
+### Required Software
+
+::: {.callout-tip}
+### Essential Tools for Day 1
+
+1. **R Statistical Software**  
+   📥 [Download R](https://cran.r-project.org/)
+
+2. **RStudio IDE**  
+   📥 [Download RStudio](https://posit.co/download/rstudio-desktop/)
+
+3. **DAGitty (Web-based)**  
+   🌐 [Access DAGitty](http://www.dagitty.net/)
+   
+   No installation needed - runs in your browser!
+:::
+
+### R Package Installation
+
+Copy and run this code in RStudio to install all required packages:
+
+```r
+# core packages
+install.packages(c(
+  "tidyverse",      # data manipulation and visualisation
+  "dagitty",        # dag analysis
+  "ggdag",          # dag visualisation
+  "broom",          # tidy model outputs
+  "kableExtra",     # nice tables
+  "flextable"       # flexible tables
+))
+
+# additional useful packages
+install.packages(c(
+  "lmtest",         # linear model tests
+  "sandwich",       # robust standard errors
+  "marginaleffects", # marginal effects
+  "MatchIt",        # matching methods
+  "WeightIt"        # weighting methods
+))
+```
+
+## Quick Reference Guides
+
+### Causal Diagram Notation
+
+::: {.card}
+#### DAG Symbol Guide
+
+- **→** Direct causal effect
+- **○** Unobserved/latent variable
+- **□** Observed variable
+- **←→** Bidirectional relationship
+- **- -** Non-causal association
+
+#### Common Structures
+- **Confounder:** X ← Z → Y
+- **Mediator:** X → M → Y
+- **Collider:** X → C ← Y
+- **Instrument:** Z → X → Y
+:::
+
+### EESI Workflow
+
+::: {.callout-note}
+### The EESI Framework
+
+1. **E**stimand: What causal quantity do we want?
+2. **E**stimator: How will we estimate it?
+3. **E**stimate: What is our numerical result?
+4. **S**imulation: How do we validate our approach?
+
+We'll practice this framework throughout the workshop!
+:::
+
+## Code Templates
+
+### Basic DAG in R
+
+```r
+library(dagitty)
+library(ggdag)
+
+# create a simple dag
+dag <- dagitty('dag {
+  Religion -> Cooperation
+  SES -> Religion
+  SES -> Cooperation
+}')
+
+# visualise
+ggdag(dag) + theme_dag()
+
+# identify adjustment sets
+adjustmentSets(dag, exposure = "Religion", outcome = "Cooperation")
+```
+
+### Simulation Template
+
+```r
+# simulate confounded relationship
+set.seed(123)
+n <- 1000
+
+# confounders
+ses <- rnorm(n)
+
+# treatment (religion)
+religion <- rbinom(n, 1, plogis(0.5 * ses))
+
+# outcome (cooperation)
+cooperation <- 2 + 0.5 * religion + 0.3 * ses + rnorm(n)
+
+# naive estimate (biased)
+lm(cooperation ~ religion)
+
+# adjusted estimate (unbiased)
+lm(cooperation ~ religion + ses)
+```
+
+## Collaborative Documents
+
+::: {.card}
+### 📝 Shared Workshop Materials
+
+During the workshop, we'll use collaborative documents for:
+- Group exercises
+- Q&A collection  
+- Resource sharing
+
+Links will be provided at the start of the workshop.
+:::
+
+## Additional Learning Resources
+
+### Online Courses
+
+::: {.rainbow-text style="font-size: 1.2rem; text-align: center;"}
+🎓 Expand Your Knowledge
+:::
+
+1. **Causal Diagrams: Draw Your Assumptions Before Your Conclusions**  
+   Free course on EdX by Miguel Hernán  
+   [View Course](https://www.edx.org/course/causal-diagrams-draw-your-assumptions-before-conclusions)
+
+2. **A Crash Course in Causality**  
+   Coursera course by Jason Roy  
+   [View Course](https://www.coursera.org/learn/crash-course-in-causality)
+
+### Key Papers & Books
+
+::: {.callout-tip}
+### 📚 Foundational Texts
+
+- Pearl, J. (2009). *Causality: Models, Reasoning, and Inference*
+- Hernán, M. A., & Robins, J. M. (2020). *Causal Inference: What If*  
+  [Free online version](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/)
+- Morgan, S. L., & Winship, C. (2015). *Counterfactuals and Causal Inference*
+:::
+
+## Support & Community
+
+### Getting Help
+
+::: {.card}
+#### During the Workshop
+- Ask questions anytime!
+- Use the collaborative Q&A document
+- Work with your table partners
+
+#### After the Workshop
+- **Email Benjamin:** bgpurzycki@cas.au.dk
+- Join the SPARCC community discussions
+- Access ongoing support through workshop network
+:::
+
+### Stay Connected
+
+::: {.callout-important}
+### 🌐 Workshop Community
+
+**Slack Channel:** *(To be set up for participants)*  
+**GitHub Discussions:** *(Link to follow)*  
+**Mailing List:** *(Registration link to follow)*
+
+Build connections with fellow researchers interested in causality, religion, and cooperation!
+:::
+
+## Citation & Attribution
+
+If you use these materials in your work:
+
+```bibtex
+@misc{purzycki2025sparcc,
+  author = {Purzycki, Benjamin Grant},
+  title = {The Data Analyst's Guide to Cause and Effect: SPARCC Workshop Day 1},
+  year = {2025},
+  url = {https://gist.github.com/bgpurzycki/68015331beb74525a364c19ccc657fd3}
+}
+```
+
+---
+
+::: {.welcome-banner}
+### Ready to Learn? 🚀
+
+All resources will be available throughout and after the workshop. Focus on learning during the sessions - you can always return to these materials later!
+:::

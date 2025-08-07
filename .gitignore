@@ -1,0 +1,17 @@
+# quarto
+/.quarto/
+_site/
+docs/
+
+# r
+.Rhistory
+.RData
+.Rproj.user
+
+# macos
+.DS_Store
+
+# editor
+.vscode/
+*.swp
+*~

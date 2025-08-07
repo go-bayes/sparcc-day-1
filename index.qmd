@@ -1,0 +1,160 @@
+---
+title: "The Data Analyst's Guide to Cause and Effect"
+subtitle: "Day 1: Foundations of Causal Inference"
+date: "12 August 2025"
+author:
+  - name: "Benjamin Grant Purzycki"
+    affiliations:
+      - name: "Aarhus University"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+::: {.welcome-banner}
+# Welcome to SPARCC Day 1! 🌈
+
+**Building Foundations for Causal Thinking in the Study of Religion and Cooperation**
+
+Tuesday, 12 August 2025 | 09:00 – 17:00
+:::
+
+## Workshop Overview
+
+This workshop introduces the fundamental concepts and practical skills for causal inference in observational data. We'll explore how to move beyond correlation to understand causation in the study of religion and cooperation.
+
+## Schedule
+
+```{r}
+#| label: tbl-schedule
+#| tbl-cap: "Day 1 Workshop Schedule"
+#| echo: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(kableExtra)
+
+schedule <- tibble(
+  Time = c(
+    "09:00–09:30",
+    "09:30–10:35",
+    "10:35–10:50",
+    "10:50–12:30",
+    "12:30–13:30",
+    "13:30–15:00",
+    "15:00–15:15",
+    "15:15–16:00",
+    "16:00–16:45",
+    "16:45–17:00"
+  ),
+  Session = c(
+    "Welcome & Introduction",
+    "Basic Theory of Causality",
+    "Morning Tea",
+    "Simulation-Based Inference",
+    "Lunch",
+    "Mapping Causal Systems (DAGs)",
+    "Afternoon Tea",
+    "Controlling for Variables",
+    "Estimating Causal Effects",
+    "Wrap-up & Discussion"
+  ),
+  `Learning Goals & Activities` = c(
+    "**Goal:** Frame causal inference as a structured framework for inquiry. We will outline the day's agenda and introduce core skills for causal thinking.\n**Activity:** Discussion of typical causal questions in the study of religion and cooperation.",
+    "**Goal:** Cultivate skills in counterfactual thinking by introducing the potential outcomes framework. We will cover the intellectual history and the fundamental problem of causal inference.\n**Example:** Initial discussion of estimands, estimators, and estimates.",
+    "",
+    "**Goal:** Understand your causal system through simulation. Introduction to the EESI (Estimand, Estimator, Estimate, Simulation) workflow for organising projects.\n**Activity:** A worked example of simulation-based inference, followed by group discussion.",
+    "",
+    "**Goal:** Learn techniques for drawing and simulating causal systems using Directed Acyclic Graphs (DAGs). Understand how to use theory, common sense, and metadata to build a DAG.\n**Activity:** Workshop on identifying confounds, colliders, instruments, and other biases. Introduction to `DAGitty` and simulations in `R`.",
+    "",
+    "**Goal:** Develop a sense of which variables to worry about in causal inference. Distinguish between 'good,' 'bad,' and 'inconsequential' controls.\n**Activity:** Group exercises on evaluating control variables in example causal diagrams.",
+    "**Goal:** Learn introductory approaches to estimating causal effects.\n**Activity:** Overview of g-computation, inverse probability weighting (IPW), and doubly robust estimation. Discussion of sensitivity checks.",
+    "**Goal:** Consolidate the day's concepts.\n**Activity:** Q&A and open discussion about applying these methods to participants' work."
+  )
+)
+
+# create the table with rainbow-themed styling
+schedule %>%
+  kbl(escape = FALSE) %>%
+  kable_styling(
+    bootstrap_options = c("striped", "hover"),
+    full_width = TRUE,
+    font_size = 14
+  ) %>%
+  column_spec(1, width = "15%", bold = TRUE) %>%
+  column_spec(2, width = "25%", bold = TRUE) %>%
+  column_spec(3, width = "60%") %>%
+  row_spec(c(3, 5, 7), background = "#fce4ec") %>%  # breaks in pink
+  row_spec(0, background = "#e91e63", color = "white", bold = TRUE)  # header in pink
+```
+
+## Learning Objectives
+
+By the end of Day 1, participants will be able to:
+
+::: {.card}
+### 🎯 Core Skills
+
+1. **Think causally** about correlations in observational data
+2. **Draw and interpret** causal diagrams (DAGs)
+3. **Identify** confounders, colliders, and other sources of bias
+4. **Apply** the EESI workflow to structure research projects
+5. **Select** appropriate control variables for causal analyses
+6. **Understand** basic estimation approaches (g-computation, IPW, doubly robust methods)
+:::
+
+## What You'll Need
+
+::: {.callout-tip}
+### Prerequisites
+- Basic familiarity with statistical concepts (regression, correlation)
+- Interest in causal questions about religion and cooperation
+- No prior causal inference experience required!
+:::
+
+::: {.callout-note}
+### Materials to Bring
+- Laptop with R and RStudio installed (optional but helpful)
+- Your research questions about religion and cooperation
+- Enthusiasm for collaborative learning!
+:::
+
+## Workshop Philosophy
+
+This workshop emphasizes **learning by doing**. We'll work through practical examples, engage in group exercises, and apply concepts to real research questions in the study of religion and cooperation.
+
+::: {.rainbow-text style="text-align: center; font-size: 1.5rem; margin: 2rem 0;"}
+"Correlation does not imply causation, but it sure is a hint!" 
+:::
+
+## Facilitator
+
+**Benjamin Grant Purzycki**  
+Department of the Study of Religion  
+Aarhus University  
+
+[View workshop materials and code →](https://gist.github.com/bgpurzycki/68015331beb74525a364c19ccc657fd3)
+
+---
+
+::: {.callout-important}
+### 🏢 Venue Information
+**Seventh College, 15th Floor Meeting Rooms**  
+Tower West, Building 1  
+Located on the northwest end of campus
+
+The meeting rooms offer expansive views and modern facilities for our workshop.
+:::
+
+## Next Steps
+
+Ready to dive deeper? Join us for [Day 2: Advanced Methods →](https://go-bayes.github.io/sparcc-day-2/) where we'll explore heterogeneous treatment effects and discover *who* benefits from religious participation!
+
+---
+
+:::{.callout-note appearance="minimal"}
+© 2025 Benjamin Grant Purzycki. Workshop materials are available under open license.  
+For questions, contact: [bgpurzycki@cas.au.dk](mailto:bgpurzycki@cas.au.dk)
+:::

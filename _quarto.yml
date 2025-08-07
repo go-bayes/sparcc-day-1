@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Day 1: The Data Analyst's Guide to Cause and Effect"
+  navbar:
+    background: "#e91e63"  # pink primary colour
+    left:
+      - text: "🏠 Home"
+        href: index.qmd
+      - text: "📚 Reading"
+        href: reading.qmd
+      - text: "🔗 Resources"
+        href: resources.qmd
+      - text: "📍 Venue"
+        href: venue.qmd
+    right:
+      - text: "Day 2 Workshop"
+        href: "https://go-bayes.github.io/sparcc-day-2/"
+      - icon: github
+        text: "GitHub"
+        href: "https://github.com/bgpurzycki"
+
+format:
+  html:
+    theme:
+      light: cosmo  # cosmo is clean and modern
+      dark: darkly    # optional dark mode
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    toc-location: right
+    number-sections: false
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+    code-fold: true
+    code-tools: true
+    code-copy: hover
+    code-overflow: wrap
+    fig-align: center
+    fig-responsive: true
+    self-contained: false
+    anchor-sections: true
+    citations-hover: true
+    footnotes-hover: true

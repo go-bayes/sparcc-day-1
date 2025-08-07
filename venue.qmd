@@ -1,0 +1,202 @@
+---
+title: "Venue Information"
+subtitle: "Finding Your Way to the Workshop"
+---
+
+::: {.welcome-banner}
+# 📍 Workshop Location
+Seventh College, University Campus
+:::
+
+## Venue Details
+
+::: {.card}
+### 🏢 Seventh College
+**15th Floor Meeting Rooms**  
+Tower West, Building 1  
+Northwest end of campus
+
+The meeting rooms are located on the 15th floor at Seventh College, offering expansive views and modern facilities for our workshop.
+:::
+
+## Getting There
+
+### By Public Transport
+
+::: {.callout-tip}
+#### 🚌 Bus Routes
+- Multiple bus routes service the campus
+- Nearest stop: [To be confirmed]
+- Journey planner: [Local transit website]
+:::
+
+::: {.callout-tip}
+#### 🚊 Train/Metro
+- Nearest station: [To be confirmed]
+- Walking time from station: Approximately 10-15 minutes
+- Follow signs to Tower West, Building 1
+:::
+
+### By Car
+
+::: {.callout-note}
+#### 🚗 Parking Information
+- Visitor parking available at [Location to be confirmed]
+- Daily parking rates: [To be confirmed]
+- Alternative parking: [Nearby options]
+
+**Note:** Parking can be limited during peak times. Please allow extra time or consider public transport.
+:::
+
+### By Bicycle
+
+::: {.callout-tip}
+#### 🚴 Cycling Facilities
+- Secure bicycle parking available at Building 1 entrance
+- Shower facilities available on request
+- Campus is bicycle-friendly with dedicated paths
+:::
+
+## Building Access
+
+### Finding the Meeting Rooms
+
+1. **Enter Tower West, Building 1** through the main entrance
+2. **Take the elevator** to the 15th floor
+3. **Follow signs** to the Meeting Rooms
+4. **Look for SPARCC Day 1** signage
+
+::: {.card}
+### 🎯 Workshop Check-in
+
+**Registration opens at 8:30 AM**  
+Coffee and light refreshments will be available from 8:30 AM
+
+Please arrive by 8:50 AM to allow time for:
+- Registration and name badges
+- Settling in and meeting other participants
+- Accessing Wi-Fi and workshop materials
+:::
+
+## Facilities
+
+### Available at Venue
+
+::: {.rainbow-text style="font-size: 1.2rem; text-align: center;"}
+✨ Modern Workshop Facilities
+:::
+
+- **Wi-Fi access** (credentials provided at registration)
+- **Power outlets** at all seating positions
+- **Whiteboards and flip charts** for group work
+- **Projector and screen** for presentations
+- **Natural lighting** with panoramic views
+- **Climate control** for comfort
+- **Accessible facilities** including lifts and accessible toilets
+
+### Catering
+
+::: {.callout-important}
+#### 🍽️ Refreshments Provided
+
+**Morning Tea:** 10:35–10:50  
+- Tea, coffee, and light snacks
+
+**Lunch:** 12:30–13:30  
+- Variety of options including vegetarian/vegan
+- Please indicate dietary requirements during registration
+
+**Afternoon Tea:** 15:00–15:15  
+- Tea, coffee, and afternoon treats
+
+**Water stations** available throughout the day
+:::
+
+## Accessibility
+
+::: {.card}
+### ♿ Accessibility Information
+
+- **Wheelchair accessible** throughout
+- **Accessible toilets** on the 15th floor
+- **Hearing loop** available in meeting rooms
+- **Large print materials** available on request
+
+For specific accessibility requirements, please contact us in advance.
+:::
+
+## Nearby Amenities
+
+### Food & Drink
+
+::: {.callout-note}
+#### ☕ Nearby Options
+- **Campus Café** - Ground floor, Tower West
+- **Food Court** - 5-minute walk in Student Union Building
+- **Local Restaurants** - Various options within 10-minute walk
+:::
+
+### Other Facilities
+
+- **ATM/Bank** - Ground floor lobby
+- **Pharmacy** - 10-minute walk
+- **Campus Store** - Student Union Building
+- **Prayer/Quiet Room** - Available on request
+
+## Emergency Information
+
+::: {.callout-warning}
+### 🚨 Important Numbers
+
+**Campus Security:** [Number to be confirmed]  
+**Medical Emergency:** 111 (NZ Emergency Services)  
+**Building Reception:** [Number to be confirmed]
+
+**First Aid:** First aid trained staff will be present during the workshop
+:::
+
+## Contact Information
+
+::: {.card}
+### 📧 Questions About Venue?
+
+**Workshop Coordinator**  
+Email: [To be confirmed]  
+Phone: [To be confirmed]
+
+**Day-of Contact**  
+Mobile: [To be provided to registered participants]
+:::
+
+## Maps & Directions
+
+::: {.callout-tip}
+### 🗺️ Interactive Map
+
+[View Campus Map](#) *(Link to be added)*
+
+A detailed PDF map will be sent to all registered participants one week before the workshop.
+:::
+
+## What to Bring
+
+::: {.rainbow-text style="font-size: 1.2rem;"}
+✅ Workshop Day Checklist
+:::
+
+- **Photo ID** for building access
+- **Laptop** (optional but recommended)
+- **Notebook and pen** for exercises
+- **Water bottle** (refill stations available)
+- **Layers** (meeting rooms can vary in temperature)
+- **Business cards** for networking
+
+---
+
+::: {.welcome-banner}
+### See You There! 🌈
+
+We look forward to welcoming you to Seventh College on **Tuesday, 12 August 2025**.
+
+If you have any questions about finding or accessing the venue, please don't hesitate to contact us.
+:::
