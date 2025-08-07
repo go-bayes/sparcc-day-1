@@ -15,7 +15,6 @@ This workshop introduces fundamental concepts and practical skills for causal in
 
 ## 🔗 Quick Links
 
-- [Workshop Website](https://go-bayes.github.io/sparcc-day-1/)
 - [Benjamin's Code & Materials](https://gist.github.com/bgpurzycki/68015331beb74525a364c19ccc657fd3)
 - [Day 2 Workshop](https://go-bayes.github.io/sparcc-day-2/)
 
