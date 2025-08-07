@@ -243,6 +243,16 @@ If you use these materials in your work:
 }
 ```
 
+## Share This Workshop
+
+::: {.card style="text-align: center; padding: 2rem;"}
+### 📱 Quick Access QR Code
+
+![](images/sparcc_day_1_qr.png){width="200" fig-align="center"}
+
+Share this QR code with colleagues who might be interested in the workshop!
+:::
+
 ---
 
 ::: {.welcome-banner}

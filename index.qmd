@@ -152,6 +152,16 @@ The meeting rooms offer expansive views and modern facilities for our workshop.
 
 Ready to dive deeper? Join us for [Day 2: Advanced Methods →](https://go-bayes.github.io/sparcc-day-2/) where we'll explore heterogeneous treatment effects and discover *who* benefits from religious participation!
 
+## Quick Access
+
+::: {.card style="text-align: center; padding: 2rem;"}
+### 📱 Scan to Access Workshop Materials
+
+![](images/sparcc_day_1_qr.png){width="200" fig-align="center"}
+
+Scan this QR code to access the workshop website on your mobile device
+:::
+
 ---
 
 :::{.callout-note appearance="minimal"}
