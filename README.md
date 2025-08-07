@@ -44,45 +44,19 @@ By the end of Day 1, participants will be able to:
 5. Select appropriate control variables for causal analyses
 6. Understand basic estimation approaches
 
-## 🏗️ Building the Website
 
-This is a Quarto website. To build locally:
+### 📱 Scan to Access Workshop Materials
 
-```bash
-# install quarto from https://quarto.org/
+![](images/sparcc_day_1_qr.png){width="500" fig-align="center"}
 
-# render the website
-quarto render
-
-# preview with live reload
-quarto preview
-```
-
-## 📝 Repository Structure
-
-```
-sparcc-day-1/
-├── _quarto.yml          # quarto configuration
-├── index.qmd            # home page with schedule
-├── reading.qmd          # pre-workshop readings
-├── resources.qmd        # workshop materials and links
-├── venue.qmd           # venue information
-├── styles.css          # rainbow/pink themed styling
-└── docs/               # rendered website (auto-generated)
-```
-
-## 🤝 Contributing
-
-This repository is maintained for the SPARCC Day 1 workshop. For questions or contributions, please contact Benjamin Grant Purzycki at bgpurzycki@cas.au.dk.
+Scan this QR code to access the workshop website on your mobile device
+:::
 
 ## 📜 License
 
-Workshop materials are available under open license. See individual files for specific licensing information.
+This workshop material is licensed under CC BY 4.0. You are free to share and adapt the materials with attribution.
 
-## 🙏 Acknowledgments
-
-This workshop is part of the SPARCC (Study of Politics, Action, Religion, Cooperation, and Conflict) initiative.
 
 ---
 
-*Built with 🌈 and Quarto*
+🌈🌈 🌈 🌈  Thank you! 🌈 🌈 🌈 🌈 

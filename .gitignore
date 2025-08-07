@@ -1,7 +1,6 @@
 # quarto
 /.quarto/
 _site/
-docs/
 
 # r
 .Rhistory

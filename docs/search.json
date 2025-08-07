@@ -1,0 +1,275 @@
+[
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Workshop Resources",
+    "section": "",
+    "text": "All the materials you need for Day 1"
+  },
+  {
+    "objectID": "resources.html#workshop-code",
+    "href": "resources.html#workshop-code",
+    "title": "Workshop Resources",
+    "section": "Workshop Code",
+    "text": "Workshop Code\n\n💻 Benjamin’s Workshop Materials\nAccess the complete workshop code and examples:\n🔗 GitHub Gist: Workshop Code\nThis gist contains: - Example R scripts for causal analysis - Simulation code for understanding causal inference - DAG construction examples - Data analysis workflows\nNote: Benjamin will continue updating this resource. Check back for the latest version before the workshop."
+  },
+  {
+    "objectID": "resources.html#workshop-data-supplementary-materials",
+    "href": "resources.html#workshop-data-supplementary-materials",
+    "title": "Workshop Resources",
+    "section": "Workshop Data & Supplementary Materials",
+    "text": "Workshop Data & Supplementary Materials\n\n📁 Dropbox Resources\nAdditional workshop materials including: - PDF handouts and guides - Example datasets - R code templates - Supplementary readings\n🔗 Access Dropbox Folder (Link to be provided to registered participants)"
+  },
+  {
+    "objectID": "resources.html#software-tools",
+    "href": "resources.html#software-tools",
+    "title": "Workshop Resources",
+    "section": "Software & Tools",
+    "text": "Software & Tools\n\nRequired Software\n\n\n\n\n\n\nTipEssential Tools for Day 1\n\n\n\n\nR Statistical Software\n📥 Download R\nRStudio IDE\n📥 Download RStudio\nDAGitty (Web-based)\n🌐 Access DAGitty\nNo installation needed - runs in your browser!\n\n\n\n\n\nR Package Installation\nCopy and run this code in RStudio to install all required packages:\n# core packages\ninstall.packages(c(\n  \"tidyverse\",      # data manipulation and visualisation\n  \"dagitty\",        # dag analysis\n  \"ggdag\",          # dag visualisation\n  \"broom\",          # tidy model outputs\n  \"kableExtra\",     # nice tables\n  \"flextable\"       # flexible tables\n))\n\n# additional useful packages\ninstall.packages(c(\n  \"lmtest\",         # linear model tests\n  \"sandwich\",       # robust standard errors\n  \"marginaleffects\", # marginal effects\n  \"MatchIt\",        # matching methods\n  \"WeightIt\"        # weighting methods\n))"
+  },
+  {
+    "objectID": "resources.html#quick-reference-guides",
+    "href": "resources.html#quick-reference-guides",
+    "title": "Workshop Resources",
+    "section": "Quick Reference Guides",
+    "text": "Quick Reference Guides\n\nCausal Diagram Notation\n\n\nDAG Symbol Guide\n\n→ Direct causal effect\n○ Unobserved/latent variable\n□ Observed variable\n←→ Bidirectional relationship\n- - Non-causal association\n\n\n\nCommon Structures\n\nConfounder: X ← Z → Y\nMediator: X → M → Y\nCollider: X → C ← Y\nInstrument: Z → X → Y\n\n\n\n\n\nEESI Workflow\n\n\n\n\n\n\nNoteThe EESI Framework\n\n\n\n\nEstimand: What causal quantity do we want?\nEstimator: How will we estimate it?\nEstimate: What is our numerical result?\nSimulation: How do we validate our approach?\n\nWe’ll practice this framework throughout the workshop!"
+  },
+  {
+    "objectID": "resources.html#code-templates",
+    "href": "resources.html#code-templates",
+    "title": "Workshop Resources",
+    "section": "Code Templates",
+    "text": "Code Templates\n\nBasic DAG in R\nlibrary(dagitty)\nlibrary(ggdag)\n\n# create a simple dag\ndag &lt;- dagitty('dag {\n  Religion -&gt; Cooperation\n  SES -&gt; Religion\n  SES -&gt; Cooperation\n}')\n\n# visualise\nggdag(dag) + theme_dag()\n\n# identify adjustment sets\nadjustmentSets(dag, exposure = \"Religion\", outcome = \"Cooperation\")\n\n\nSimulation Template\n# simulate confounded relationship\nset.seed(123)\nn &lt;- 1000\n\n# confounders\nses &lt;- rnorm(n)\n\n# treatment (religion)\nreligion &lt;- rbinom(n, 1, plogis(0.5 * ses))\n\n# outcome (cooperation)\ncooperation &lt;- 2 + 0.5 * religion + 0.3 * ses + rnorm(n)\n\n# naive estimate (biased)\nlm(cooperation ~ religion)\n\n# adjusted estimate (unbiased)\nlm(cooperation ~ religion + ses)"
+  },
+  {
+    "objectID": "resources.html#collaborative-documents",
+    "href": "resources.html#collaborative-documents",
+    "title": "Workshop Resources",
+    "section": "Collaborative Documents",
+    "text": "Collaborative Documents\n\n📝 Shared Workshop Materials\nDuring the workshop, we’ll use collaborative documents for: - Group exercises - Q&A collection\n- Resource sharing\nLinks will be provided at the start of the workshop."
+  },
+  {
+    "objectID": "resources.html#additional-learning-resources",
+    "href": "resources.html#additional-learning-resources",
+    "title": "Workshop Resources",
+    "section": "Additional Learning Resources",
+    "text": "Additional Learning Resources\n\nOnline Courses\n\n🎓 Expand Your Knowledge\n\n\nCausal Diagrams: Draw Your Assumptions Before Your Conclusions\nFree course on EdX by Miguel Hernán\nView Course\nA Crash Course in Causality\nCoursera course by Jason Roy\nView Course\n\n\n\nKey Papers & Books\n\n\n\n\n\n\nTip📚 Foundational Texts\n\n\n\n\nPearl, J. (2009). Causality: Models, Reasoning, and Inference\nHernán, M. A., & Robins, J. M. (2020). Causal Inference: What If\nFree online version\nMorgan, S. L., & Winship, C. (2015). Counterfactuals and Causal Inference"
+  },
+  {
+    "objectID": "resources.html#support-community",
+    "href": "resources.html#support-community",
+    "title": "Workshop Resources",
+    "section": "Support & Community",
+    "text": "Support & Community\n\nGetting Help\n\n\nDuring the Workshop\n\nAsk questions anytime!\nUse the collaborative Q&A document\nWork with your table partners\n\n\n\nAfter the Workshop\n\nEmail Benjamin: bgpurzycki@cas.au.dk\nJoin the SPARCC community discussions\nAccess ongoing support through workshop network\n\n\n\n\n\nStay Connected\n\n\n\n\n\n\nImportant🌐 Workshop Community\n\n\n\nSlack Channel: (To be set up for participants)\nGitHub Discussions: (Link to follow)\nMailing List: (Registration link to follow)\nBuild connections with fellow researchers interested in causality, religion, and cooperation!"
+  },
+  {
+    "objectID": "resources.html#citation-attribution",
+    "href": "resources.html#citation-attribution",
+    "title": "Workshop Resources",
+    "section": "Citation & Attribution",
+    "text": "Citation & Attribution\nIf you use these materials in your work:\n@misc{purzycki2025sparcc,\n  author = {Purzycki, Benjamin Grant},\n  title = {The Data Analyst's Guide to Cause and Effect: SPARCC Workshop Day 1},\n  year = {2025},\n  url = {https://gist.github.com/bgpurzycki/68015331beb74525a364c19ccc657fd3}\n}"
+  },
+  {
+    "objectID": "resources.html#share-this-workshop",
+    "href": "resources.html#share-this-workshop",
+    "title": "Workshop Resources",
+    "section": "Share This Workshop",
+    "text": "Share This Workshop\n\n📱 Quick Access QR Code\n\n\n\n\n\nShare this QR code with colleagues who might be interested in the workshop!\n\n\n\nReady to Learn? 🚀\nAll resources will be available throughout and after the workshop. Focus on learning during the sessions - you can always return to these materials later!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Data Analyst’s Guide to Cause and Effect",
+    "section": "",
+    "text": "Building Foundations for Causal Thinking in the Study of Religion and Cooperation\nTuesday, 12 August 2025 | 09:00 – 17:00"
+  },
+  {
+    "objectID": "index.html#workshop-overview",
+    "href": "index.html#workshop-overview",
+    "title": "The Data Analyst’s Guide to Cause and Effect",
+    "section": "Workshop Overview",
+    "text": "Workshop Overview\nThis workshop introduces the fundamental concepts and practical skills for causal inference in observational data. We’ll explore how to move beyond correlation to understand causation in the study of religion and cooperation."
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "The Data Analyst’s Guide to Cause and Effect",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\n\nTable 1: Day 1 Workshop Schedule\n\n\n\n\n\n\nTime\nSession\nLearning Goals & Activities\n\n\n\n\n09:00–09:30\nWelcome & Introduction\n**Goal:** Frame causal inference as a structured framework for inquiry. We will outline the day's agenda and introduce core skills for causal thinking. **Activity:** Discussion of typical causal questions in the study of religion and cooperation.\n\n\n09:30–10:35\nBasic Theory of Causality\n**Goal:** Cultivate skills in counterfactual thinking by introducing the potential outcomes framework. We will cover the intellectual history and the fundamental problem of causal inference. **Example:** Initial discussion of estimands, estimators, and estimates.\n\n\n10:35–10:50\nMorning Tea\n\n\n\n10:50–12:30\nSimulation-Based Inference\n**Goal:** Understand your causal system through simulation. Introduction to the EESI (Estimand, Estimator, Estimate, Simulation) workflow for organising projects. **Activity:** A worked example of simulation-based inference, followed by group discussion.\n\n\n12:30–13:30\nLunch\n\n\n\n13:30–15:00\nMapping Causal Systems (DAGs)\n**Goal:** Learn techniques for drawing and simulating causal systems using Directed Acyclic Graphs (DAGs). Understand how to use theory, common sense, and metadata to build a DAG. **Activity:** Workshop on identifying confounds, colliders, instruments, and other biases. Introduction to `DAGitty` and simulations in `R`.\n\n\n15:00–15:15\nAfternoon Tea\n\n\n\n15:15–16:00\nControlling for Variables\n**Goal:** Develop a sense of which variables to worry about in causal inference. Distinguish between 'good,' 'bad,' and 'inconsequential' controls. **Activity:** Group exercises on evaluating control variables in example causal diagrams.\n\n\n16:00–16:45\nEstimating Causal Effects\n**Goal:** Learn introductory approaches to estimating causal effects. **Activity:** Overview of g-computation, inverse probability weighting (IPW), and doubly robust estimation. Discussion of sensitivity checks.\n\n\n16:45–17:00\nWrap-up & Discussion\n**Goal:** Consolidate the day's concepts. **Activity:** Q&A and open discussion about applying these methods to participants' work."
+  },
+  {
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "The Data Analyst’s Guide to Cause and Effect",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of Day 1, participants will be able to:\n\n🎯 Core Skills\n\nThink causally about correlations in observational data\nDraw and interpret causal diagrams (DAGs)\nIdentify confounders, colliders, and other sources of bias\nApply the EESI workflow to structure research projects\nSelect appropriate control variables for causal analyses\nUnderstand basic estimation approaches (g-computation, IPW, doubly robust methods)"
+  },
+  {
+    "objectID": "index.html#what-youll-need",
+    "href": "index.html#what-youll-need",
+    "title": "The Data Analyst’s Guide to Cause and Effect",
+    "section": "What You’ll Need",
+    "text": "What You’ll Need\n\n\n\n\n\n\nTipPrerequisites\n\n\n\n\nBasic familiarity with statistical concepts (regression, correlation)\nInterest in causal questions about religion and cooperation\nNo prior causal inference experience required!\n\n\n\n\n\n\n\n\n\nNoteMaterials to Bring\n\n\n\n\nLaptop with R and RStudio installed (optional but helpful)\nYour research questions about religion and cooperation\nEnthusiasm for collaborative learning!"
+  },
+  {
+    "objectID": "index.html#workshop-philosophy",
+    "href": "index.html#workshop-philosophy",
+    "title": "The Data Analyst’s Guide to Cause and Effect",
+    "section": "Workshop Philosophy",
+    "text": "Workshop Philosophy\nThis workshop emphasizes learning by doing. We’ll work through practical examples, engage in group exercises, and apply concepts to real research questions in the study of religion and cooperation.\n\n“Correlation does not imply causation, but it sure is a hint!”"
+  },
+  {
+    "objectID": "index.html#facilitator",
+    "href": "index.html#facilitator",
+    "title": "The Data Analyst’s Guide to Cause and Effect",
+    "section": "Facilitator",
+    "text": "Facilitator\nBenjamin Grant Purzycki\nDepartment of the Study of Religion\nAarhus University\nView workshop materials and code →\n\n\n\n\n\n\n\nImportant🏢 Venue Information\n\n\n\nSeventh College, 15th Floor Meeting Rooms\nTower West, Building 1\nLocated on the northwest end of campus\nThe meeting rooms offer expansive views and modern facilities for our workshop."
+  },
+  {
+    "objectID": "index.html#next-steps",
+    "href": "index.html#next-steps",
+    "title": "The Data Analyst’s Guide to Cause and Effect",
+    "section": "Next Steps",
+    "text": "Next Steps\nReady to dive deeper? Join us for Day 2: Advanced Methods → where we’ll explore heterogeneous treatment effects and discover who benefits from religious participation!"
+  },
+  {
+    "objectID": "index.html#quick-access",
+    "href": "index.html#quick-access",
+    "title": "The Data Analyst’s Guide to Cause and Effect",
+    "section": "Quick Access",
+    "text": "Quick Access\n\n📱 Scan to Access Workshop Materials\n\n\n\n\n\nScan this QR code to access the workshop website on your mobile device\n\n\n\n\n\n\n\n\n© 2025 Benjamin Grant Purzycki. Workshop materials are available under open license.\nFor questions, contact: bgpurzycki@cas.au.dk"
+  },
+  {
+    "objectID": "venue.html",
+    "href": "venue.html",
+    "title": "Venue Information",
+    "section": "",
+    "text": "Seventh College, University Campus"
+  },
+  {
+    "objectID": "venue.html#venue-details",
+    "href": "venue.html#venue-details",
+    "title": "Venue Information",
+    "section": "Venue Details",
+    "text": "Venue Details\n\n🏢 Seventh College\n15th Floor Meeting Rooms\nTower West, Building 1\nNorthwest end of campus\nThe meeting rooms are located on the 15th floor at Seventh College, offering expansive views and modern facilities for our workshop."
+  },
+  {
+    "objectID": "venue.html#getting-there",
+    "href": "venue.html#getting-there",
+    "title": "Venue Information",
+    "section": "Getting There",
+    "text": "Getting There\n\nBy Public Transport\n\n\n\n\n\n\nTip🚌 Bus Routes\n\n\n\n\nMultiple bus routes service the campus\nNearest stop: [To be confirmed]\nJourney planner: [Local transit website]\n\n\n\n\n\n\n\n\n\nTip🚊 Train/Metro\n\n\n\n\nNearest station: [To be confirmed]\nWalking time from station: Approximately 10-15 minutes\nFollow signs to Tower West, Building 1\n\n\n\n\n\nBy Car\n\n\n\n\n\n\nNote🚗 Parking Information\n\n\n\n\nVisitor parking available at [Location to be confirmed]\nDaily parking rates: [To be confirmed]\nAlternative parking: [Nearby options]\n\nNote: Parking can be limited during peak times. Please allow extra time or consider public transport.\n\n\n\n\nBy Bicycle\n\n\n\n\n\n\nTip🚴 Cycling Facilities\n\n\n\n\nSecure bicycle parking available at Building 1 entrance\nShower facilities available on request\nCampus is bicycle-friendly with dedicated paths"
+  },
+  {
+    "objectID": "venue.html#building-access",
+    "href": "venue.html#building-access",
+    "title": "Venue Information",
+    "section": "Building Access",
+    "text": "Building Access\n\nFinding the Meeting Rooms\n\nEnter Tower West, Building 1 through the main entrance\nTake the elevator to the 15th floor\nFollow signs to the Meeting Rooms\nLook for SPARCC Day 1 signage\n\n\n\n🎯 Workshop Check-in\nRegistration opens at 8:30 AM\nCoffee and light refreshments will be available from 8:30 AM\nPlease arrive by 8:50 AM to allow time for: - Registration and name badges - Settling in and meeting other participants - Accessing Wi-Fi and workshop materials"
+  },
+  {
+    "objectID": "venue.html#facilities",
+    "href": "venue.html#facilities",
+    "title": "Venue Information",
+    "section": "Facilities",
+    "text": "Facilities\n\nAvailable at Venue\n\n✨ Modern Workshop Facilities\n\n\nWi-Fi access (credentials provided at registration)\nPower outlets at all seating positions\nWhiteboards and flip charts for group work\nProjector and screen for presentations\nNatural lighting with panoramic views\nClimate control for comfort\nAccessible facilities including lifts and accessible toilets\n\n\n\nCatering\n\n\n\n\n\n\nImportant🍽️ Refreshments Provided\n\n\n\nMorning Tea: 10:35–10:50\n- Tea, coffee, and light snacks\nLunch: 12:30–13:30\n- Variety of options including vegetarian/vegan - Please indicate dietary requirements during registration\nAfternoon Tea: 15:00–15:15\n- Tea, coffee, and afternoon treats\nWater stations available throughout the day"
+  },
+  {
+    "objectID": "venue.html#accessibility",
+    "href": "venue.html#accessibility",
+    "title": "Venue Information",
+    "section": "Accessibility",
+    "text": "Accessibility\n\n♿ Accessibility Information\n\nWheelchair accessible throughout\nAccessible toilets on the 15th floor\nHearing loop available in meeting rooms\nLarge print materials available on request\n\nFor specific accessibility requirements, please contact us in advance."
+  },
+  {
+    "objectID": "venue.html#nearby-amenities",
+    "href": "venue.html#nearby-amenities",
+    "title": "Venue Information",
+    "section": "Nearby Amenities",
+    "text": "Nearby Amenities\n\nFood & Drink\n\n\n\n\n\n\nNote☕ Nearby Options\n\n\n\n\nCampus Café - Ground floor, Tower West\nFood Court - 5-minute walk in Student Union Building\nLocal Restaurants - Various options within 10-minute walk\n\n\n\n\n\nOther Facilities\n\nATM/Bank - Ground floor lobby\nPharmacy - 10-minute walk\nCampus Store - Student Union Building\nPrayer/Quiet Room - Available on request"
+  },
+  {
+    "objectID": "venue.html#emergency-information",
+    "href": "venue.html#emergency-information",
+    "title": "Venue Information",
+    "section": "Emergency Information",
+    "text": "Emergency Information\n\n\n\n\n\n\nWarning🚨 Important Numbers\n\n\n\nCampus Security: [Number to be confirmed]\nMedical Emergency: 111 (NZ Emergency Services)\nBuilding Reception: [Number to be confirmed]\nFirst Aid: First aid trained staff will be present during the workshop"
+  },
+  {
+    "objectID": "venue.html#contact-information",
+    "href": "venue.html#contact-information",
+    "title": "Venue Information",
+    "section": "Contact Information",
+    "text": "Contact Information\n\n📧 Questions About Venue?\nWorkshop Coordinator\nEmail: [To be confirmed]\nPhone: [To be confirmed]\nDay-of Contact\nMobile: [To be provided to registered participants]"
+  },
+  {
+    "objectID": "venue.html#maps-directions",
+    "href": "venue.html#maps-directions",
+    "title": "Venue Information",
+    "section": "Maps & Directions",
+    "text": "Maps & Directions\n\n\n\n\n\n\nTip🗺️ Interactive Map\n\n\n\nView Campus Map (Link to be added)\nA detailed PDF map will be sent to all registered participants one week before the workshop."
+  },
+  {
+    "objectID": "venue.html#what-to-bring",
+    "href": "venue.html#what-to-bring",
+    "title": "Venue Information",
+    "section": "What to Bring",
+    "text": "What to Bring\n\n✅ Workshop Day Checklist\n\n\nPhoto ID for building access\nLaptop (optional but recommended)\nNotebook and pen for exercises\nWater bottle (refill stations available)\nLayers (meeting rooms can vary in temperature)\nBusiness cards for networking\n\n\n\nSee You There! 🌈\nWe look forward to welcoming you to Seventh College on Tuesday, 12 August 2025.\nIf you have any questions about finding or accessing the venue, please don’t hesitate to contact us."
+  },
+  {
+    "objectID": "reading.html",
+    "href": "reading.html",
+    "title": "Pre-Workshop Reading",
+    "section": "",
+    "text": "Get the most out of Day 1 by reviewing these foundational materials"
+  },
+  {
+    "objectID": "reading.html#required-reading",
+    "href": "reading.html#required-reading",
+    "title": "Pre-Workshop Reading",
+    "section": "Required Reading",
+    "text": "Required Reading\nThe following readings are recommended in descending order of importance for the workshop:\n\n1. Thinking Clearly About Correlations and Causation\n\nRohrer, J. M. (2018). Thinking clearly about correlations and causation: Graphical causal models for observational data. Advances in Methods and Practices in Psychological Science, 1(1), 27-42.\n📖 https://doi.org/10.1177/2515245917745629\nWhy this matters: This paper provides an excellent introduction to causal diagrams (DAGs) and how they help us think about causation in observational data. Essential reading for understanding the core concepts we’ll use throughout the workshop.\n\n\n\n2. Causality in the Study of Religion\n\nMajor-Smith, D. (2023). Exploring causality from observational data: An example assessing whether religiosity promotes cooperation. Evolutionary Human Sciences, 5, e22.\n📖 https://doi.org/10.1017/ehs.2023.17\nWhy this matters: A practical application of causal inference methods to a key question in the study of religion. This paper demonstrates the workflow we’ll be learning.\n\n\n\n3. The Data Analyst’s Guide (Chapters 1-4)\n\nBendixen, T, and Purzycki, B. G. (forthcoming). The Data Analyst’s Guide to Cause and Effect. London: SAGE.\n📚 Chapters 1-4 (Day 1 will largely follow Chapters 1-2)\nWhy this matters: Our primary textbook for the workshop. These chapters introduce the fundamental concepts and practical approaches we’ll be using.\nNote: Materials will be provided to workshop participants."
+  },
+  {
+    "objectID": "reading.html#additional-resources",
+    "href": "reading.html#additional-resources",
+    "title": "Pre-Workshop Reading",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nInteractive Tools\n\n\n\n\n\n\nTip🎮 DAGitty\n\n\n\nPractice drawing and analysing causal diagrams:\nhttp://www.dagitty.net/\nWe’ll use this tool extensively during the workshop!\n\n\n\n\nVideo Resources\n\n\n\n\n\n\nNote🎥 Recommended Videos\n\n\n\n\n“Causal Inference Bootcamp” by Brady Neal\nExcellent video series covering fundamentals\nYouTube Playlist\n“The Book of Why” by Judea Pearl\nOverview talk on causal reasoning\nWatch on YouTube"
+  },
+  {
+    "objectID": "reading.html#r-resources",
+    "href": "reading.html#r-resources",
+    "title": "Pre-Workshop Reading",
+    "section": "R Resources",
+    "text": "R Resources\nIf you plan to follow along with the code examples, please ensure you have R and RStudio installed:\n\nInstallation Guide\n\n\nInstall R (version 4.0 or higher)\nDownload from: https://cran.r-project.org/\nInstall RStudio\nDownload from: https://posit.co/download/rstudio-desktop/\nInstall Required Packages\nRun this code in RStudio:\ninstall.packages(c(\n  \"tidyverse\",\n  \"dagitty\",\n  \"ggdag\",\n  \"broom\",\n  \"margot\",\n  \"kableExtra\"\n))"
+  },
+  {
+    "objectID": "reading.html#workshop-code-and-materials",
+    "href": "reading.html#workshop-code-and-materials",
+    "title": "Pre-Workshop Reading",
+    "section": "Workshop Code and Materials",
+    "text": "Workshop Code and Materials\n\n\n\n\n\n\nImportant💻 Access Workshop Code\n\n\n\nBenjamin’s workshop materials and example code are available at:\n🔗 GitHub Gist: Workshop Code\nThis gist will be updated with additional materials as the workshop approaches. Please check back closer to the workshop date for the latest version."
+  },
+  {
+    "objectID": "reading.html#conceptual-foundations",
+    "href": "reading.html#conceptual-foundations",
+    "title": "Pre-Workshop Reading",
+    "section": "Conceptual Foundations",
+    "text": "Conceptual Foundations\n\nKey Concepts to Review\nBefore the workshop, it will be helpful to be familiar with these statistical concepts:\n\n\nBasic Statistics\n\nCorrelation vs Causation\nRegression analysis basics\nConfounding variables\nSelection bias\n\n\n\nResearch Design\n\nObservational vs Experimental data\nCounterfactual thinking\nTreatment and control groups"
+  },
+  {
+    "objectID": "reading.html#questions-to-consider",
+    "href": "reading.html#questions-to-consider",
+    "title": "Pre-Workshop Reading",
+    "section": "Questions to Consider",
+    "text": "Questions to Consider\nAs you read, consider these questions about your own research:\n\n✨ What causal questions about religion and cooperation interest you?\n\n\nWhat is your outcome of interest?\nWhat is your treatment or exposure?\nWhat confounders might bias your analysis?\nWhat data would you need to answer your question?\nHow would you communicate your findings?"
+  },
+  {
+    "objectID": "reading.html#getting-help",
+    "href": "reading.html#getting-help",
+    "title": "Pre-Workshop Reading",
+    "section": "Getting Help",
+    "text": "Getting Help\n\n\n\n\n\n\nNote📧 Contact\n\n\n\nIf you have questions about the readings or preparation:\nBenjamin Grant Purzycki\nEmail: bgpurzycki@cas.au.dk\nWorkshop Coordinator\nEmail: [workshop contact to be added]\n\n\n\n\nReady for Day 1?\nReview these materials at your own pace. The workshop is designed to be accessible even if you haven’t completed all the readings, but familiarity with the concepts will enhance your learning experience!\nSee you on 12 August 2025! 🌈"
+  }
+]
