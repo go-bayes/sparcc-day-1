@@ -1,6 +1,6 @@
 # SPARCC Day 1: The Data Analyst's Guide to Cause and Effect
 
-Welcome to the repository for Day 1 of the SPARCC Causal Inference Workshop!
+Welcome to the repository for Day 1 of the SPARCC Causal Inference Workshop
 
 ## 📅 Workshop Details
 
