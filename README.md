@@ -15,18 +15,18 @@ This workshop introduces fundamental concepts and practical skills for causal in
 
 ## 🔗 Quick Links
 
-- [Day 1 Lecture](https://www.dropbox.com/scl/fi/e9l943j1p8i63kaddzogj/Day1_purzycki.pdf?rlkey=eugt4p7gys3g947ezm7l9l3v0&dl=1)
+- [Day 1 Lecture Download]( https://www.dropbox.com/scl/fi/nhoepb3l5t017y1j1829q/Day1_purzycki.pdf?rlkey=9lhnraw5ejtx7chlspqqkg0j2&st=h4vsnzi6&dl=1)
 - [R code](https://gist.github.com/bgpurzycki/68015331beb74525a364c19ccc657fd3)
 - [Day 2 Workshop](https://go-bayes.github.io/sparcc-day-2/)
 
 
 ## 📚 Pre-Workshop Preparation
 
-### Required Reading (in order of importance):
+### Optional Reading (in order of importance):
 
 1. Rohrer, J. M. (2018). Thinking clearly about correlations and causation. [DOI: 10.1177/2515245917745629](https://doi.org/10.1177/2515245917745629)
 2. Major-Smith, D. (2023). Exploring causality from observational data. [DOI: 10.1017/ehs.2023.17](https://doi.org/10.1017/ehs.2023.17)
-3. Bendixen, T, and Purzycki, B. G. (forthcoming). The Data Analyst's Guide to Cause and Effect. Chapters 1-4.
+3. Bendixen, T, and Purzycki, B. G. (forthcoming). The Data Analyst's Guide to Cause and Effect. Chapters 1-4. [Download Book](https://www.dropbox.com/scl/fi/k8c46z744zcpbzk12sgh3/QASS-template.pdf?rlkey=n3edpnh0j5dr4q2e52xgd3cb9&st=1w3pgebj&dl=1)
 
 ### Software Requirements:
 
