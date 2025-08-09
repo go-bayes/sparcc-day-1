@@ -48,7 +48,7 @@ By the end of Day 1, participants will be able to:
 
 ### 🌈 Scan to Access Workshop Materials
 
-![](images/sparcc_day_1_qr.png){width="500" fig-align="center"}
+![](images/sparcc_day_1_qr.png)
 
 Scan this QR code to access the workshop website on your mobile device
 :::
